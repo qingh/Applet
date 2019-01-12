@@ -1,0 +1,41 @@
+.wrap {
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.search {
+  display: flex;
+  padding: 0 16px;
+}
+.search input {
+  flex-grow: 1;
+  font-size: 14px;
+  padding: 5px;
+  height: 34px;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.channel {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item {
+  text-align: center;
+  margin: 0 10px 30px;
+}
+.list {
+  text-align: center;
+}
+.img {
+  width: 90px;
+  height: 90px;
+}
+.text {
+  display: block;
+  font-size: 12px;
+}

@@ -1,0 +1,8 @@
+<view class="wrap">
+		<view class="channel">
+				<view class="item" wx:for="{{data}}" wx:key="{{index}}" bindtap="fn" data-type="{{item.ch_name}}">
+						<image class='img' src="{{item.thumb}}"></image>
+						<text class='text'>{{item.name}}</text>
+				</view>
+		</view>
+</view>

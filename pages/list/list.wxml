@@ -1,0 +1,13 @@
+<view class="wrap">
+		<view class="search">
+				<input placeholder="请输入歌曲名" name="keywords" bindinput="searchInput" />
+				<button type="primary" size="default" bindtap="search">搜索</button>
+		</view>
+		<view class="channel">
+				<view class="item" wx:for="{{data}}" wx:key="{{index}}" bindtap="bindViewTap" data-id="{{item.songid}}">
+						<image class='img' src="{{item.thumb || item.pic}}"></image>
+						<text class='text'>{{item.title}}</text>
+						<text class='text'>{{item.artist || item.author}}</text>
+				</view>
+		</view>
+</view>
